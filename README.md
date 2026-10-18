@@ -23,8 +23,12 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 - [ ] Deploy com **GitHub Pages**
 
 ## Como a pipeline funciona
-> **Substitua este bloco pela sua explicação após implementar a pipeline.**
-> Descreva cada step, o que ele faz e por que ele é importante para a segurança.
+**Gitleaks (Secrets Scanning):** Varre o código-fonte em busca de chaves de API, senhas ou tokens expostos acidentalmente, garantindo que credenciais sensíveis não cheguem ao repositório
+
+**Semgrep (SAST):** Realiza análise estática do código para detectar vulnerabilidades de segurança e más práticas (como o uso de `eval()` e `innerHTML` sem sanitização)
+
+**Grype (SCA):** Analisa as dependências declaradas no projeto em busca de vulnerabilidades conhecidas (CVEs) em bibliotecas de terceiros
 
 ## URL de Produção
-> Adicione aqui o link do GitHub Pages após o deploy.
+https://brilhantepb.github.io/projeto-devsecop-desafio/
+
